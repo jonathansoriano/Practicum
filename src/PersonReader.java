@@ -76,6 +76,8 @@ public class PersonReader {
                         lastName  = fields[2].trim();
                         title     = fields[3].trim();
                         yob       = Integer.parseInt(fields[4].trim());
+                        System.out.printf("\n%-8s%-25s%-25s%-6s%6s", "ID", "First Name", "Lastname", "Title", "YOB"); // Formated Columns
+                        System.out.printf("==================================================================="); // Bracket? 
                         System.out.printf("\n%-8s%-25s%-25s%-6s%6d", id, firstName, lastName, title, yob);
                     }
                     else
