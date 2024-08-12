@@ -41,7 +41,7 @@ public class PersonReader {
             if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
             {
                 selectedFile = chooser.getSelectedFile();
-                Path file = selectedFile.toPath();
+                Path file = selectedFile.toPath(); //Converting file "selectedFile" to Path?
                 // Typical java pattern of inherited classes
                 // we wrap a BufferedWriter around a lower level BufferedOutputStream
                 InputStream in =
