@@ -34,13 +34,7 @@ public class PersonReader {
 
         try
         {
-
-            // use the toolkit to get the current working directory of the IDE
-            // Not sure if the toolkit is thread safe...
-             
-
             
-
             if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
             {
                 selectedFile = chooser.getSelectedFile();
