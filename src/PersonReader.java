@@ -29,14 +29,17 @@ public class PersonReader {
         String id, firstName, lastName, title;
         int yob;
 
+        File workingDirectory = new File(System.getProperty("user.dir")); // Can this be outside of the try block
+        chooser.setCurrentDirectory(workingDirectory);
+
         try
         {
 
             // use the toolkit to get the current working directory of the IDE
             // Not sure if the toolkit is thread safe...
-            File workingDirectory = new File(System.getProperty("user.dir")); // Can this be outside of the try block?
+             
 
-            chooser.setCurrentDirectory(workingDirectory);
+            
 
             if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
             {
