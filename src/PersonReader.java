@@ -34,7 +34,7 @@ public class PersonReader {
 
             // use the toolkit to get the current working directory of the IDE
             // Not sure if the toolkit is thread safe...
-            File workingDirectory = new File(System.getProperty("user.dir"));
+            File workingDirectory = new File(System.getProperty("user.dir")); // Can this be outside of the try block?
 
             chooser.setCurrentDirectory(workingDirectory);
 
