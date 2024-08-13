@@ -43,12 +43,12 @@ public class ProductWriter {
         }
 
 
-     // End of main Method
 
 
 
 
-    }
+
+    } // End of main Method
     private static void createFile(String filename) throws IOException {
         FileWriter myWriter = new FileWriter(filename + ".txt");
 
