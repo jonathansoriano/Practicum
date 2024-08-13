@@ -29,7 +29,7 @@ public class PersonGenerator {
             done = SafeInput.getYNConfirm(in, "Are you done? "); // Asking if we are done adding people's info to ArrayList
         }while(!done);
 
-        /*for (int i = 0; i < folks.size(); i++) // This is the regular for loop. Starts with 0 index and since it's a List
+        /* for (int i = 0; i < folks.size(); i++) // This is the regular for loop. Starts with 0 index and since it's a List
                                                  // we do ".size()" method instead of ".length()".
             System.out.println(folks.get(i)); // Printing out all the values in ArrayList
         */
